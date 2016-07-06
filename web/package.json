@@ -6,9 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server -d --inline --port 3000",
     "lint": "semistandard",
-    "test": "npm install && npm run test-only",
+    "test": "npm install --production=false && npm run test-only",
     "test-only": "mocha 'src/**/*.spec.js' --compilers js:babel-core/register",
-    "build": "npm install && npm run lint && npm run build-only",
+    "build": "npm install --production=false && npm run lint && npm run build-only",
     "build-only": "webpack --progress"
   },
   "author": "",
