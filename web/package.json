@@ -7,10 +7,16 @@
     "start": "webpack-dev-server -d --inline --port 3000",
     "lint": "semistandard",
     "test": "mocha 'src/**/*.spec.js'",
-    "build": "webpack --progress"
+    "build": "npm install && npm run lint && npm run build-only",
+    "build-only": "webpack --progress"
   },
   "author": "",
   "license": "ISC",
+  "semistandard": {
+    "ignore": [
+      "/target/**"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
