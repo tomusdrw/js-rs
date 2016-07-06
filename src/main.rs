@@ -1,3 +1,7 @@
+use std::path;
+
 fn main() {
-    println!("Hello, world!");
+    println!(
+      include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/web/main.js"))
+    );
 }

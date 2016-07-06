@@ -3,5 +3,6 @@ name = "js-rs"
 description = "Demo of building JS project in Rust"
 version = "0.1.0"
 authors = ["Tomusdrw <tomusdrw@gmail.com>"]
+build = "build.rs"
 
 [dependencies]
